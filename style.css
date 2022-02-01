@@ -1,0 +1,86 @@
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  /* padding: 0; */
+  padding: 50px 20% 40px 20%;
+}
+
+/*
+ * Contact & Clients
+ */
+.contact_clients,
+.contact_clients * {
+  border: 1px solid red;
+}
+
+.contact_clients {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+  /* padding: 50px 20% 40px 20%; */
+}
+
+@media only screen and (max-width: 600px) {
+  .contact_clients {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-flow: column;
+  /* margin-right: calc(5% + 20px); */
+  flex: 0 45%;
+}
+
+.contact_clients_title {
+  font-weight: bolder;
+  margin: 15px 0;
+}
+
+.contactform {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+}
+
+.contactform > * {
+  margin: 10px 0;
+  padding: 10px;
+  /* flex: 0 100%; */
+}
+
+.contactform > input,
+.contactform > textarea {
+  border: 1px solid lightgray;
+  font-size: 0.7rem;
+}
+
+.contact_submit {
+  padding: 0.5rem;
+  width: 100px;
+  color: turquoise;
+  background: inherit;
+  border: 1px solid turquoise;
+  font-weight: bold;
+}
+
+.clients {
+  display: flex;
+  flex-flow: column;
+  flex: 0 45%;
+}
+
+.clients_imgs {
+  display: grid;
+}
+
+/*
+ * Footer
+ */
+footer {
+  display: flex;
+  /* justify-content: center; */
+  /* padding: 50px 10% 30px 10%; */
+}
