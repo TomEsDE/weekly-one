@@ -1,0 +1,27 @@
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "gridheader gridheader gridheader gridheader gridheader"
+    ". webdev . . .";
+    border: black solid;
+}
+
+.gridheader {
+  grid-area: gridheader;
+  text-align: center;
+  border: red solid;
+  padding-top: 50px;
+}
+
+.webdev {
+  grid-area: webdev;
+  text-align: center;
+  border-right: lightgray solid 1px;
+  border-bottom: lightgray solid 1px;
+}
+
+.identity {
+  grid-area: identity;
+}
