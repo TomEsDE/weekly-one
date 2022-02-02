@@ -1,0 +1,139 @@
+body {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  /* padding: 0; */
+}
+
+/*
+ * Contact & Clients
+ */
+.contact_clients,
+.contact_clients *,
+footer,
+footer * {
+  /* border: 1px solid red; */
+}
+
+.contact_clients,
+footer {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.contact_clients {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+  /* padding: 50px 20% 40px 20%; */
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact_clients {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+.contact,
+.clients {
+  display: flex;
+  flex-flow: column;
+  /* margin-right: calc(5% + 20px); */
+  flex: 0 45%;
+}
+
+.contact {
+  /* display: none; */
+}
+
+.contact_clients_title {
+  font-weight: bolder;
+  margin: 15px 0;
+}
+
+.contactform {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+}
+
+.contactform > * {
+  margin: 10px 0;
+  padding: 10px;
+  /* flex: 0 100%; */
+}
+
+.contactform > input,
+.contactform > textarea {
+  border: 1px solid lightgray;
+  font-size: 0.7rem;
+}
+
+.contact_btn_submit {
+  padding: 0.5rem;
+  width: 100px;
+  color: turquoise;
+  background: inherit;
+  border: 1px solid turquoise;
+  font-weight: bold;
+}
+
+.contact_btn_submit:hover {
+  background: cornsilk;
+}
+
+.contact_btn_submit:active {
+  background: purple;
+}
+
+.clients {
+}
+
+.clients_imgs {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(5, 1fr) / minmax(80px, 160px) minmax(80px, 160px);
+  /* grid-template: repeat(5, 1fr) / minmax(80px, 1fr) minmax(80px, 1fr); */
+  /* grid-template: repeat(5, 1fr) / 1fr 1fr; */
+  row-gap: 10px;
+  column-gap: calc(5% + 0.5rem);
+}
+
+.clients_img,
+.clients_img_small {
+  grid-area: 1 1;
+  justify-self: center;
+  align-self: center;
+  /* height: 50%; */
+}
+
+.clients_img {
+  width: clamp(2rem, 70% + 20px, 8rem);
+}
+
+.clients_img_small {
+  width: clamp(2rem, 50% + 20px, 8rem);
+}
+
+/*
+ * Footer
+ */
+footer {
+  /* position: absolute;
+  bottom: 0;
+  width: 100%; */
+  display: flex;
+  /* flex-flow: column; */
+  /* justify-content: center; */
+  /* padding: 50px 10% 30px 10%; */
+  /* padding: 0px 20% 0px 20%; */
+  background: url(img/bgk-footer.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15rem;
+  color: white;
+}
