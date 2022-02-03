@@ -1,0 +1,188 @@
+.grid1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 75px;
+    grid-template-areas:
+    "gridheader gridheader gridheader gridheader gridheader"
+    ". webdev identity mobile ."
+    ". search_engine game_development love ."
+    "empty empty empty empty empty";
+    border: black solid 1px;
+    
+}
+
+.gridheader {
+  grid-area: gridheader;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.gridheader h3{
+  font-size: 25px;
+  padding-top: -25px;
+}
+
+.gridheader p{
+  margin-top: -20px;
+}
+
+.webdev {
+  grid-area: webdev;
+  text-align: center;
+  border-right: lightgray solid 1px;
+  border-bottom: lightgray solid 1px;
+  padding-top: 30px;
+}
+
+.identity {
+  grid-area: identity;
+  text-align: center;
+  border-left: lightgrey solid 1px;
+  border-right: lightgrey solid 1px;
+  border-bottom: lightgrey solid 1px;
+  padding-top: 38px;
+}
+
+.mobile {
+  grid-area: mobile;
+  text-align: center;
+  border-left: lightgrey solid 1px;
+  border-bottom: lightgrey solid 1px;
+  padding-top: 30px;
+}
+
+.search_engine {
+  grid-area: search_engine;
+  text-align: center;
+  border-top: lightgrey solid 1px;
+  border-right: lightgrey solid 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.game_development {
+  grid-area: game_development;
+  text-align: center;
+  border-left: lightgrey solid 1px;
+  border-top: lightgrey solid 1px;
+  border-right: lightgrey solid 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.love {
+  grid-area: love;
+  text-align: center;
+  border-left: lightgrey solid 1px;
+  border-top: lightgrey solid 1px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+
+}
+
+.empty {
+  grid-area: empty;
+  height: 10px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 350px) 1fr;
+  grid-template-rows: 1fr 375px 100px 1fr;
+  grid-template-areas:
+  ". grid2header grid2header grid2header grid2header."
+  ". pic1 pic2 pic3 pic4 ."
+  ". ucuk adalin kol romak ."
+  ". . hiring hiring . .";
+  background: url(img/bgk-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  column-gap: 25px;
+}
+
+.grid2header {
+  grid-area: grid2header;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 50px;
+}
+
+.grid2header h3{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pic1 {
+  grid-area: pic1;
+  background-color: white;
+}
+
+.pic2 {
+  grid-area: pic2;
+  background-color: white;
+}
+
+.pic3 {
+  grid-area: pic3;
+  background-color: white;
+}
+
+.pic4 {
+  grid-area: pic4;
+  background-color: white;
+}
+
+.ucuk {
+  grid-area: ucuk;
+  text-align: center;
+  border: white solid 1px;
+}
+
+.adalin {
+  grid-area: adalin;
+  text-align: center;
+  border: white solid 1px;
+}
+
+.kol {
+  grid-area: kol;
+  text-align: center;
+  border: white solid 1px;
+}
+
+.romak {
+  grid-area: romak;
+  text-align: center;
+  border: white solid 1px;
+}
+
+.hiring {
+  grid-area: hiring;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 50px;
+}
+
+#hiring {
+  color:  rgb(141, 253, 253);
+  border: rgb(141, 253, 253) solid 1px;
+  border-radius: 2px;
+  display: inline;
+  padding: 12px;
+  margin-bottom: 300x;
+}
+
+#join_us {
+  font-size: 18px;
+}
+
+.h3 {
+  font-size: 15px;
+}
+
+.teamnames {
+  line-height: 5px;
+  font-size: 17px;
+}
