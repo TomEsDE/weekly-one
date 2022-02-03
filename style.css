@@ -1,3 +1,18 @@
+:root {
+  --font-header: "Playfair Display", serif;
+  --font-p: "Roboto", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-p);
+  margin: 0;
+  /* padding: 0; */
+}
+
+/*
+ * Our Story
+ */
 .ourstorygrid {
   display: grid;
   grid-template-columns: auto auto;
@@ -100,12 +115,6 @@ h3 {
     display: block;
     margin: auto;
   }
-}
-body {
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-  /* padding: 0; */
 }
 
 /*
