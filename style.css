@@ -1,3 +1,105 @@
+.ourstorygrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 200px;
+  padding: 100px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #999999;
+}
+
+.buttonourstory {
+  background-color: white;
+  border: solid;
+  border-width: thin;
+  border-radius: 3px;
+  color: #00cccc;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.watchourstory {
+  background: url("img/bgk-middle.png") no-repeat;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.playwatchourstory {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  color: white;
+}
+
+@media screen and (max-width: 1290px) {
+  .ourstorygrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 263px;
+    align-content: space-between;
+    justify-items: center;
+    margin-left: 0px;
+  }
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #999999;
+    text-align: center;
+  }
+  .buttonourstory {
+    background-color: white;
+    border: solid;
+    border-width: thin;
+    border-radius: 3px;
+    color: #00cccc;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+  }
+}
 body {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -101,9 +203,6 @@ footer {
 
 .contact_btn_submit:active {
   background: purple;
-}
-
-.clients {
 }
 
 .clients_imgs {
