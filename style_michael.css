@@ -1,14 +1,14 @@
 .grid1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 75px;
-    grid-template-areas:
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 75px;
+  grid-template-areas:
     "gridheader gridheader gridheader gridheader gridheader"
     ". webdev identity mobile ."
     ". search_engine game_development love ."
     "empty empty empty empty empty";
-    border: black solid 1px;
-    
+  border: black solid 1px;
+  color: black;
 }
 
 .gridheader {
@@ -17,12 +17,12 @@
   padding-top: 50px;
 }
 
-.gridheader h3{
+.gridheader h3 {
   font-size: 25px;
   padding-top: -25px;
 }
 
-.gridheader p{
+.gridheader p {
   margin-top: -20px;
 }
 
@@ -77,7 +77,6 @@
   border-top: lightgrey solid 1px;
   padding-top: 35px;
   padding-bottom: 30px;
-
 }
 
 .empty {
@@ -90,10 +89,10 @@
   grid-template-columns: 1fr repeat(4, 350px) 1fr;
   grid-template-rows: 1fr 375px 100px 1fr;
   grid-template-areas:
-  ". grid2header grid2header grid2header grid2header."
-  ". pic1 pic2 pic3 pic4 ."
-  ". ucuk adalin kol romak ."
-  ". . hiring hiring . .";
+    ". grid2header grid2header grid2header grid2header."
+    ". pic1 pic2 pic3 pic4 ."
+    ". ucuk adalin kol romak ."
+    ". . hiring hiring . .";
   background: url(img/bgk-header.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -109,7 +108,7 @@
   margin-bottom: 50px;
 }
 
-.grid2header h3{
+.grid2header h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -166,7 +165,7 @@
 }
 
 #hiring {
-  color:  rgb(141, 253, 253);
+  color: rgb(141, 253, 253);
   border: rgb(141, 253, 253) solid 1px;
   border-radius: 2px;
   display: inline;
