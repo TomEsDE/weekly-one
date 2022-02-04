@@ -1,8 +1,23 @@
-<<<<<<< HEAD
-* {
-  margin: 0;
-  padding: 0;
+:root {
+  --font-h2: "Playfair Display", serif;
+  --font-p: "Roboto", sans-serif;
 }
+
+* {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-p);
+  margin: 0;
+  /* padding: 0; */
+}
+
+/*
+ *
+ */
 header {
   width: 100%;
 
@@ -87,17 +102,6 @@ button {
   padding: 10px;
   border: 2px solid rgb(26, 224, 231);
   background-color: transparent;
-=======
-:root {
-  --font-h2: "Playfair Display", serif;
-  --font-p: "Roboto", sans-serif;
-}
-
-body {
-  box-sizing: border-box;
-  font-family: var(--font-p);
-  margin: 0;
-  /* padding: 0; */
 }
 
 /*
