@@ -4,8 +4,8 @@
 }
 
 * {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -532,5 +532,4 @@ footer {
 .footer-nav-copyright {
   flex-grow: 5;
   text-align: right;
->>>>>>> 8eedbe9b9ff4d97a353cf6aac027f16881dec59c
 }
